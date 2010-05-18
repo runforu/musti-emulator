@@ -1,0 +1,30 @@
+/*
+========================================================================
+ Name        : TraceManagerSetting.l01
+ Author      : DH
+ Copyright   : All right is reserved!
+ Version     : 
+ E-Mail      : dh.come@gmail.com
+ Description : 
+ 
+ Copyright (c) 2009-2015 DH.
+ This material, including documentation and any related 
+ computer programs, is protected by copyright controlled BY Du Hui(DH)
+========================================================================
+*/
+
+// localized strings for language: UK English (01)
+
+
+
+#define STR_TraceManagerSettingView_1 "Settings"
+#define STR_TraceManagerSettingView_5 "Conn Setting"
+#define STR_TraceManagerSettingView_7 "Change"
+#define STR_TraceManagerSettingView_9 "Connection Type"
+
+#define STR_TraceManagerSettingView_15 "USB"
+#define STR_TraceManagerSettingView_16 "USB"
+#define STR_TraceManagerSettingView_17 "Blue Tooth"
+#define STR_TraceManagerSettingView_18 "Blue Tooth"
+#define STR_TraceManagerSettingView_19 "File"
+#define STR_TraceManagerSettingView_20 "Log to File"
