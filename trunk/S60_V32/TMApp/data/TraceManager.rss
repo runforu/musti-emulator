@@ -1,0 +1,51 @@
+/*
+========================================================================
+ Name        : TraceManager.rss
+ Author      : DH
+ Copyright   : All right is reserved!
+ Version     : 
+ E-Mail      : dh.come@gmail.com
+ Description : 
+ 
+ Copyright (c) 2009-2015 DH.
+ This material, including documentation and any related 
+ computer programs, is protected by copyright controlled BY Du Hui(DH)
+========================================================================
+*/
+NAME DHTM
+
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <eikon.rh>
+#include <appinfo.rh>
+#include "TraceManager.hrh"
+#include "TraceManager.loc"
+
+RESOURCE RSS_SIGNATURE
+	{
+	}
+RESOURCE TBUF
+	{
+	buf = "DHTM";
+	}
+RESOURCE EIK_APP_INFO r_application_tracemanager_app_ui
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+	status_pane = r_application_status_pane;
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_application_status_pane
+	{
+	}
+RESOURCE LOCALISABLE_APP_INFO r_localisable_app_info
+	{
+	short_caption = STR_TraceManagerApplication_Short_Caption;
+	caption_and_icon = CAPTION_AND_ICON_INFO
+		{
+		caption = STR_TraceManagerApplication_Caption;
+		number_of_icons = 1;
+		icon_file = "\\resource\\apps\\TraceManager_aif.mif";
+		};
+	}
+
+#include "TraceManagerMain.rssi"
+#include "TraceManagerSetting.rssi"

@@ -1,0 +1,19 @@
+/*
+========================================================================
+ Name        : TraceManager.l01
+ Author      : DH
+ Copyright   : All right is reserved!
+ Version     : 
+ E-Mail      : dh.come@gmail.com
+ Description : 
+ 
+ Copyright (c) 2009-2015 DH.
+ This material, including documentation and any related 
+ computer programs, is protected by copyright controlled BY Du Hui(DH)
+========================================================================
+*/
+
+// localized strings for language: UK English (01)
+
+#define STR_TraceManagerApplication_Caption "TraceManager"
+#define STR_TraceManagerApplication_Short_Caption "TraceManager"

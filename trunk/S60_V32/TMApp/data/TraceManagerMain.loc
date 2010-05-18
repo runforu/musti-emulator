@@ -1,0 +1,18 @@
+/*
+========================================================================
+ Name        : TraceManagerMain.loc
+ Author      : DH
+ Copyright   : All right is reserved!
+ Version     : 
+ E-Mail      : dh.come@gmail.com
+ Description : 
+ 
+ Copyright (c) 2009-2015 DH.
+ This material, including documentation and any related 
+ computer programs, is protected by copyright controlled BY Du Hui(DH)
+========================================================================
+*/
+
+#ifdef LANGUAGE_01
+#include "TraceManagerMain.l01"
+#endif
