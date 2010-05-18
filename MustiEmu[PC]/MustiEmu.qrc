@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>images/continue.png</file>
+        <file>images/copy.png</file>
+        <file>images/new.png</file>
+        <file>images/pause.png</file>
+        <file>images/play.png</file>
+        <file>images/save.png</file>
+        <file>images/settings.png</file>
+        <file>images/stop.png</file>
+        <file>images/clean.png</file>
+        <file>images/app_icon.png</file>
+        <file>images/com_config.png</file>
+        <file>images/com_ports_search.png</file>
+    </qresource>
+</RCC>
