@@ -1,0 +1,99 @@
+/*
+========================================================================
+ Name        : TMApp.mmp
+ Author      : DH
+ Copyright   : All right is reserved!
+ Version     : 
+ E-Mail      : dh.come@gmail.com
+ Description : 
+ 
+ Copyright (c) 2009-2015 DH.
+ This material, including documentation and any related 
+ computer programs, is protected by copyright controlled BY Du Hui(DH)
+========================================================================
+*/
+
+#include <bldvariant.hrh>
+#include <data_caging_paths.hrh>
+#ifndef __SERIES60_30__
+#include <platform_paths.hrh>
+#endif
+
+TARGET			TraceManager.exe
+UID			   0x100039CE 0xE8ABABAB
+VENDORID	  	  0
+TARGETTYPE		exe
+EPOCSTACKSIZE	 0x5000
+
+LANG 			01
+
+APP_LAYER_SYSTEMINCLUDE
+USERINCLUDE	   ..\inc 
+USERINCLUDE	   ..\..\TraceRedirection\inc 
+
+SOURCEPATH		..\data
+START RESOURCE	TraceManager.rss
+HEADER
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE TraceManager_reg.rss
+TARGETPATH \private\10003a3f\apps
+//HEADER
+END
+
+LIBRARY			euser.lib 
+LIBRARY			cone.lib 
+LIBRARY			avkon.lib
+LIBRARY			eikcoctl.lib 
+LIBRARY			eikctl.lib 
+LIBRARY 		apgrfx.lib
+LIBRARY 		bluetooth.lib 
+LIBRARY 		btextnotifiers.lib
+LIBRARY 		sdpagent.lib
+LIBRARY 		sdpdatabase.lib
+//LIBRARY 		insock.lib
+LIBRARY 		esock.lib
+LIBRARY 		c32.lib 
+LIBRARY			eikcore.lib
+LIBRARY			apparc.lib 
+LIBRARY			etext.lib  
+LIBRARY 		ws32.lib
+LIBRARY 		centralrepository.lib 
+LIBRARY			efsrv.lib 
+LIBRARY			bafl.lib 
+LIBRARY			gdi.lib 
+
+START BITMAP	TraceManager.mbm
+HEADER
+TARGETPATH		\resource\apps
+SOURCEPATH		..\gfx
+SOURCE	c12,1	list_icon.bmp list_icon_mask.bmp
+END
+
+SOURCEPATH		..\src
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+
+SOURCE TraceManagerMain.cpp 
+SOURCE TraceManagerMainView.cpp 
+SOURCE TraceManagerDocument.cpp 
+SOURCE TraceManagerApplication.cpp 
+SOURCE TraceManagerAppUi.cpp 
+SOURCE TraceManagerSettings.cpp 
+SOURCE TraceManagerSettingList.cpp
+SOURCE TMBtServiceSearcher.cpp 
+SOURCE TMServiceSearcher.cpp 
+SOURCE TMBtWriter.cpp
+SOURCE TMUsbWriter.cpp 
+SOURCE TmSdpAttributeParser.cpp 
+SOURCE TraceClient.cpp 
+SOURCE TraceManagerSettingView.cpp 
+SOURCE TMFileWriter.cpp 
+SOURCE TMWriteHelper.cpp
+
+
+CAPABILITY all -TCB
+

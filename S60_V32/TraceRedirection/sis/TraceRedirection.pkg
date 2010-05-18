@@ -1,0 +1,30 @@
+;========================================================================
+; Name        : TraceRedirection.pkg
+; Author      : DH
+; Copyright   : All right is reserved!
+; Version     :
+; E-Mail      : dh.come@gmail.com
+; Description : 
+; 
+; Copyright (c) 2009-2015 DH.
+; This material, including documentation and any related 
+; computer programs, is protected by copyright controlled BY Du Hui(DH)
+;========================================================================
+
+
+;Languages
+&EN
+
+;Header
+#{"Trace Redirection"},(0xE0720795),3,00,12
+
+;Localised Vendor name
+%{"DH-EN"}
+
+;Unique Vendor name
+:"DH"
+
+;Supports Series 60 v 3.2
+[0x102752AE], 0, 0, 0, {"Series60ProductID"}
+
+"\epoc32\release\armv5\urel\TRACEREDIRECTION.ldd"			-"!:\sys\bin\TRACEREDIRECTION.ldd"

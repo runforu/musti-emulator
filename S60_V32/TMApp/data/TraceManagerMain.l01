@@ -1,0 +1,25 @@
+/*
+========================================================================
+ Name        : TraceManagerMain.l01
+ Author      : DH
+ Copyright   : All right is reserved!
+ Version     : 
+ E-Mail      : dh.come@gmail.com
+ Description : 
+ 
+ Copyright (c) 2009-2015 DH.
+ This material, including documentation and any related 
+ computer programs, is protected by copyright controlled BY Du Hui(DH)
+========================================================================
+*/
+
+// localized strings for language: UK English (01)
+
+#define STR_TraceManagerMainView_2 "Options"
+#define STR_TraceManagerMainView_3 "Hide"
+#define STR_TraceManagerMainView_4 "Trace Manager"
+#define STR_TraceManagerMainView_5 "Connect"
+#define STR_TraceManagerMainView_6 "Settings"
+#define STR_TraceManagerMainView_7 "Exit"
+#define STR_TraceManagerMainView_8 "Disconnect"
+

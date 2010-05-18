@@ -1,0 +1,23 @@
+/*
+========================================================================
+ Name        : TraceManagerSetting.hrh
+ Author      : DH
+ Copyright   : All right is reserved!
+ Version     : 
+ E-Mail      : dh.come@gmail.com 
+ Description : 
+ 
+ Copyright (c) 2009-2015 DH.
+ This material, including documentation and any related 
+ computer programs, is protected by copyright controlled BY Du Hui(DH)
+========================================================================
+*/
+
+enum TTraceManagerSettingViewItems
+	{
+	ETraceManagerSettingViewConnType = 1
+	};
+enum TTraceManagerSettingViewCommands
+	{
+	ETraceManagerSettingViewChangeCommand = 0x6000
+	};

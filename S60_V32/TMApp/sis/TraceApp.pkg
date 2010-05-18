@@ -1,0 +1,39 @@
+;========================================================================
+; Name        : TraceApp.pkg
+; Author      : DH
+; Copyright   : All right is reserved!
+; Version     : 
+; E-Mail      : dh.come@gmail.com
+; Description : 
+; 
+; Copyright (c) 2009-2015 DH.
+; This material, including documentation and any related 
+; computer programs, is protected by copyright controlled BY Du Hui(DH)
+;========================================================================
+
+
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"TraceManager"},(0x10202BE9),1,0,0,TYPE=SP 
+
+;Localised Vendor name
+%{"DH-EN"}
+
+;Unique Vendor name
+:"DH"
+
+;Supports Series 60 v 3.2
+[0x102752AE], 0, 0, 0, {"Series60ProductID"}
+
+;Files to install
+;You should change the source paths to match that of your environment
+;<source> <destination>
+"\Epoc32\release\armv5\urel\TraceManager.exe"		-"!:\sys\bin\TraceManager.exe"
+"\Epoc32\data\z\resource\apps\TraceManager.r01"		-"!:\resource\apps\TraceManager.r01"
+"\Epoc32\data\z\private\10003a3f\apps\TraceManager_reg.r01"	-"!:\private\10003a3f\import\apps\TraceManager_reg.r01"
+"\epoc32\data\z\resource\apps\TraceManager_aif.mif" -"!:\resource\apps\TraceManager_aif.mif"
+"\epoc32\data\z\resource\apps\TraceManager.mbm" -"!:\resource\apps\TraceManager.mbm"
+"\epoc32\data\z\private\10202be9\E8ABABAB.txt" -"$:\private\10202BE9\persists\E8ABABAB.txt"
+"\epoc32\data\z\private\10202be9\E8ABABAB.cre" -"$:\private\10202BE9\persists\E8ABABAB.cre"
