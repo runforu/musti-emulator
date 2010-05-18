@@ -1,0 +1,24 @@
+/*
+========================================================================
+ Name        : TraceManager_reg.loc
+ Author      : DH
+ Copyright   : All right is reserved!
+ Version     : 
+ E-Mail      : dh.come@gmail.com
+ Description : 
+ 
+ Copyright (c) 2009-2015 DH.
+ This material, including documentation and any related 
+ computer programs, is protected by copyright controlled BY Du Hui(DH)
+========================================================================
+*/
+
+// Caption string for app.
+#define qtn_caption_string "Trace Manager"
+
+// Short caption string for app.
+#define qtn_short_caption_string "TM"
+
+#define qtn_loc_resource_file_1 "\\resource\\apps\\TraceManager"
+
+// End of File
