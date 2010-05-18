@@ -1,0 +1,28 @@
+/*
+========================================================================
+ Name        : bld.inf
+ Author      : DH
+ Copyright   : All right is reserved!
+ Version     : 
+ E-Mail      : dh.come@gmail.com
+ Description : 
+ 
+ Copyright (c) 2009-2015 DH.
+ This material, including documentation and any related 
+ computer programs, is protected by copyright controlled BY Du Hui(DH)
+========================================================================
+*/
+
+PRJ_PLATFORMS
+WINSCW ARMV5 GCCE
+
+PRJ_EXPORTS
+..\cenrep\E8ABABAB.txt  \epoc32\data\z\private\10202be9\E8ABABAB.txt
+..\cenrep\E8ABABAB.cre  \epoc32\data\z\private\10202be9\E8ABABAB.cre
+
+PRJ_MMPFILES
+
+gnumakefile icons_aif_scalable_dc.mk
+
+
+TMApp.mmp

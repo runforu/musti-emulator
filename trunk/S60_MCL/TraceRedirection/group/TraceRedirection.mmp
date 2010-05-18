@@ -1,0 +1,43 @@
+/*
+========================================================================
+ Name        : TraceRedirection.mmp
+ Author      : DH
+ Copyright   : All right is reserved!
+ Version     :
+ E-Mail      : dh.come@gmail.com
+ Description : 
+ 
+ Copyright (c) 2009-2015 DH.
+ This material, including documentation and any related 
+ computer programs, is protected by copyright controlled BY Du Hui(DH)
+========================================================================
+*/
+
+
+TARGET			TRACEREDIRECTION.ldd
+TARGETTYPE		LDD
+UID				0x100000AF 0xE0720795
+SOURCEPATH		../src
+LIBRARY			ekern.lib
+
+NOSTRICTDEF
+
+USERINCLUDE	   ..\inc
+
+systeminclude		/epoc32/include 
+systeminclude		/epoc32/include/platform/kernel 
+systeminclude		/epoc32/include/platform/nkern
+
+systeminclude		/epoc32/include/platform/kernel/arm
+systeminclude		/epoc32/include/platform/nkern/arm
+systeminclude		/epoc32/include/platform
+systeminclude		/epoc32/include/platform/memmodel/epoc
+systeminclude		/epoc32/include/platform/memmodel/epoc/mmubase
+
+VENDORID 0x101FB657
+capability			all
+
+
+MACRO __KERNEL_MODE__
+
+SOURCE traceredirect.cpp

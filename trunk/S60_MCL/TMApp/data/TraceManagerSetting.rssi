@@ -1,0 +1,138 @@
+/*
+========================================================================
+ Name        : TraceManagerSetting.rssi
+ Author      : DH
+ Copyright   : All right is reserved!
+ Version     : 
+ E-Mail      : dh.come@gmail.com
+ Description : 
+ 
+ Copyright (c) 2009-2015 DH.
+ This material, including documentation and any related 
+ computer programs, is protected by copyright controlled BY Du Hui(DH)
+========================================================================
+*/
+
+#include "TraceManagerSetting.hrh"
+#include "TraceManagerSetting.loc"
+
+RESOURCE AVKON_VIEW r_tracemanager_setting_tracemanager_setting_view
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_DONE;
+	menubar = r_tracemanager_setting_options_menu;
+	toolbar = 0;
+	}
+
+RESOURCE MENU_BAR r_tracemanager_setting_options_menu
+	{
+	titles =
+		{
+		MENU_TITLE
+			{
+			menu_pane = r_tracemanager_setting_menu_pane1_menu_pane;
+			}
+		};
+	}
+
+RESOURCE MENU_PANE r_tracemanager_setting_menu_pane1_menu_pane
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = ETraceManagerSettingViewChangeCommand;
+			txt = STR_TraceManagerSettingView_7;
+			}
+		};
+	}
+
+RESOURCE STATUS_PANE_APP_MODEL r_tracemanager_setting_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_tracemanager_setting_title_resource;
+			}
+		};
+	}
+
+RESOURCE TITLE_PANE r_tracemanager_setting_title_resource
+	{
+	txt = STR_TraceManagerSettingView_5;
+	}
+
+RESOURCE AVKON_SETTING_ITEM_LIST r_tracemanager_setting_tracemanager_setting
+	{
+	flags = EAknSettingItemNumberedStyle;
+	items =
+		{
+		AVKON_SETTING_ITEM
+			{
+			name = STR_TraceManagerSettingView_9;
+			identifier = ETraceManagerSettingViewConnType;
+			setting_page_resource = r_tracemanager_setting_conn_type_setting_page_resource;
+			associated_resource = r_tracemanager_setting_conn_type;
+			}
+		};
+	}
+
+RESOURCE AVKON_SETTING_PAGE r_tracemanager_setting_conn_type_setting_page_resource
+	{
+	label = STR_TraceManagerSettingView_9;
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_tracemanager_setting_conn_type_editor_resource_id;
+	}
+
+RESOURCE POPUP_SETTING_LIST r_tracemanager_setting_conn_type_editor_resource_id
+	{
+	}
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_tracemanager_setting_conn_type
+	{
+	setting_texts_resource = r_tracemanager_setting_conn_type_setting_texts_resource;
+	popped_up_texts_resource = r_tracemanager_setting_conn_type_popped_up_texts_resource;
+	}
+
+RESOURCE ARRAY r_tracemanager_setting_conn_type_setting_texts_resource
+	{
+	items =
+		{
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_TraceManagerSettingView_15;
+			value = 0;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_TraceManagerSettingView_17;
+			value = 1;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_TraceManagerSettingView_19;
+			value = 2;
+			}
+		};
+	}
+
+RESOURCE ARRAY r_tracemanager_setting_conn_type_popped_up_texts_resource
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_TraceManagerSettingView_16;
+			},
+		LBUF
+			{
+			txt = STR_TraceManagerSettingView_18;
+			},
+		LBUF
+			{
+			txt = STR_TraceManagerSettingView_20;
+			}
+		};
+	}
