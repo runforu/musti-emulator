@@ -64,6 +64,7 @@ LIBRARY			efsrv.lib
 LIBRARY			bafl.lib 
 LIBRARY			gdi.lib 
 LIBRARY			usbman.lib
+LIBRARY         oommonitor.lib
 
 START BITMAP	TraceManager.mbm
 HEADER

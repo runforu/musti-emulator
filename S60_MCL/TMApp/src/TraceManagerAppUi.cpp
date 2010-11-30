@@ -18,6 +18,7 @@
 #include <akntitle.h>
 #include <TraceManager.rsg>
 #include <e32cmn.h>
+#include <oommonitorsession.h> 
 
 #include "TraceManagerAppUi.h"
 #include "TraceManager.hrh"
@@ -107,6 +108,11 @@ void CTraceManagerAppUi::HandleViewDeactivation(
 
 void CTraceManagerAppUi::ConstructL()
 	{	
+    ROomMonitorSession oomMonitor;
+    User::LeaveIfError( oomMonitor.Connect() );
+    oomMonitor.SetOomPriority( ROomMonitorSession::EOomPriorityBusy );
+    oomMonitor.Close();
+    
     BaseConstructL( EAknEnableSkin 
             | EAknEnableMSK 
 #ifdef MCL
